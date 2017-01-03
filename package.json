@@ -1,0 +1,26 @@
+{
+  "name": "keysfamilydotorg",
+  "version": "0.0.1",
+  "description": "A simple website for information about the Keys family and its genealogy.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morgankeys/keysfamilydotorg.git"
+  },
+  "keywords": [
+    "keys"
+  ],
+  "author": "Morgan Keys",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morgankeys/keysfamilydotorg/issues"
+  },
+  "homepage": "https://github.com/morgankeys/keysfamilydotorg#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}
