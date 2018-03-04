@@ -21,7 +21,8 @@
   "homepage": "https://github.com/morgankeys/keysfamilydotorg#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "jquery": "^3.1.1"
+    "jquery": "^3.1.1",
+    "tachyons": "^4.9.1"
   },
   "engines": {
     "node": "4.1.1"
