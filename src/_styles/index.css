@@ -1,0 +1,17 @@
+body {
+	max-width: 34em;
+	margin: auto;
+}
+
+.f1 {
+	font-family: "Rubik", sans-serif;
+}
+
+a {
+	color: #357edd;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
