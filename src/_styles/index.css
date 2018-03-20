@@ -1,17 +1,82 @@
 body {
-	max-width: 34em;
-	margin: auto;
-}
+  margin: auto;
+  font-family: "Arial", sans-serif; }
 
 .f1 {
-	font-family: "Rubik", sans-serif;
-}
+  font-family: "Arial Black", sans-serif;
+  font-size: 28px;
+  letter-spacing: -1px;
+  margin: 18px 0; }
 
 a {
-	color: #357edd;
-	text-decoration: none;
+  color: #357edd;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
 
-	&:hover {
-		text-decoration: underline;
-	}
-}
+.header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  text-align: center; }
+  @media screen and (max-width: 629px) {
+    .header {
+      position: relative; } }
+  .header .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+    text-align: left; }
+  .header a {
+    color: #fff;
+    text-decoration: none; }
+    .header a:hover {
+      color: #2368c2; }
+  .header nav {
+    text-align: right;
+    margin: 0; }
+    .header nav ul {
+      text-align: right;
+      margin: 18px 0; }
+      .header nav ul li {
+        font-family: "Arial", sans-serif;
+        font-size: 16px;
+        list-style-type: none;
+        margin-left: 20px;
+        font-style: normal;
+        letter-spacing: 0px;
+        text-align: left; }
+  @media screen and (max-width: 629px) {
+    .header {
+      background-color: #303030;
+      box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.2); } }
+  .header.solid {
+    background-color: #303030;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.2); }
+
+.no-hero {
+  margin-top: 68px; }
+
+.hero {
+  background-color: #303030;
+  height: 400px; }
+  .hero .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+    max-width: 1060px;
+    background: center top/cover no-repeat url(./../_assets/keysfamily_a.jpg);
+    height: 100%;
+    text-align: left;
+    width: 100%; }
+    @media screen and (max-width: 629px) {
+      .hero .container {
+        background-position: center bottom; } }
+
+.main-content {
+  text-align: center; }
+  .main-content .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+    text-align: left; }

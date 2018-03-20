@@ -1,34 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Keysfamily.org</title>
-    <link rel="stylesheet" href="_styles/tachyons.min.css">
-    <link rel="stylesheet" href="_styles/index.css">
-  </head>
-  <body>
-    <div class="fl w-100 pa2 sans-serif measure-wide lh-copy">
-    	<h1 class="f1 dark-blue">Keysfamily.org</h1>
-    	<p class="b">The Keys family is:</p>
-      <p>Phillip M, Keys and his wife Kathryn V'Norma Keys n&eacute;e Medcraft.</p>
-    	<p>Phillip M. Keys has three sons Phillip Edward, Christopher Joseph and Timothy John Keys.</p>
-    	<p>Kathyrn V. Keys has three sons David, Donald and Dale Linebarger.</p>
-    	<p>Phillip E. Keys is married to Kae Keys n&eacute;e Matsushita. Their daughter is Leika Keys.</p>
-    	<p>Christopher J. Keys is married to Nina Keys n&eacute;e Gee. Their daughters are Amanda and Alaina Keys.</p>
-    	<p>Timothy J. Keys is married to Christiane Abel. Their son is Nicolas Keys.</p>
-    	<p>David Linebarger is married to Jacque Mesecher. Their daughters are Emily and Anne.</p>
-    	<p>Donald Linebarger is married to Jackie Bathauer.</p>
-    	<p>Dale Linebarger has a son Stephen Linebarger. His sons are Ethan and Mason.</p>
-    	<h3 class="f3 dark-blue">Links</h3>
-    	<ul>
-    		<li><a href="Genealogy/">Keys Family Genealogy</a></li>
-    		<li><a href="philm/">Phillip M. Keys</a></li>
-    		<li><a href="1996/philk.html">Phillip E. Keys</a></li>
-    		<li><a href="blitz/blitz.htm">Blitz Family</a> is dedicated to the memory of Jules and Jose Blitz, late of Seattle, USA, and Holland and Belgium.</li>
-    	</ul>
-    	<p>You can contact Phillip M. Keys at <a href="mailto:philm@keysfamily.org">philm@keysfamily.org</a>.
-    	</p>
-    	<p class="i">This page is lightly maintained by Phil's cousin, Morgan Keys. You can reach him at <a href="mailto:morgan@keysfamily.org">morgan@keysfamily.org</a>	</p>
-    	<p class="i">Last updated March 4, 2018</p>
-    </div>
-  </body>
+	<head>
+		<title>Keysfamily.org</title>
+		<link rel="stylesheet" href="_styles/tachyons.min.css">
+		<link rel="stylesheet" href="_styles/index.css">
+		<script>
+			window.onload = function() {
+				window.addEventListener('scroll', function(e) {
+					console.log(window.scrollY);
+					var el  = document.getElementsByClassName('header')[0];
+					if (window.scrollY >= 200) {
+						console.log(window.scrollY);
+						el.classList.add('solid');
+					}
+					else {
+						var reg = new RegExp('(\\s|^)' + 'solid' + '(\\s|$)');
+						el.className=el.className.replace(reg, ' ');
+					}
+				});
+			};
+		</script>
+	</head>
+	<body>
+		<div class="header fl w-100" >
+			<div class="container">
+				<h1 class="f1 white fl w-60">The Keys Family</h1>
+				<nav class="f1 fr w-40">
+					<ul class="fr">
+						<li class="fl"><a class="white" href="">Stories</a></li>
+						<li class="fl"><a class="white" href="">Family Tree</a></li>
+						<li class="fl"><a class="white" href="">Contact</a></li>
+					</ul>
+			</div>
+		</div>
+		<div class="hero fl w-100" >
+			<div class="container"></div>
+		</div>
+		<div class="main-content fl w-100 pa2 sans-serif lh-copy">
+			<div class="container">
+				<p class="b">The Keys family is:</p>
+				<p>Phillip M, Keys and his wife Kathryn V'Norma Keys n&eacute;e Medcraft.</p>
+				<p>Phillip M. Keys has three sons Phillip Edward, Christopher Joseph and Timothy John Keys.</p>
+				<p>Kathyrn V. Keys has three sons David, Donald and Dale Linebarger.</p>
+				<p>Phillip E. Keys is married to Kae Keys n&eacute;e Matsushita. Their daughter is Leika Keys.</p>
+				<p>Christopher J. Keys is married to Nina Keys n&eacute;e Gee. Their daughters are Amanda and Alaina Keys.</p>
+				<p>Timothy J. Keys is married to Christiane Abel. Their son is Nicolas Keys.</p>
+				<p>David Linebarger is married to Jacque Mesecher. Their daughters are Emily and Anne.</p>
+				<p>Donald Linebarger is married to Jackie Bathauer.</p>
+				<p>Dale Linebarger has a son Stephen Linebarger. His sons are Ethan and Mason.</p>
+				<aside>
+					<h3 class="f3 dark-blue">Links</h3>
+					<ul>
+						<li><a href="Genealogy/">Keys Family Genealogy</a></li>
+						<li><a href="philm/">Phillip M. Keys</a></li>
+						<li><a href="1996/philk.html">Phillip E. Keys</a></li>
+						<li><a href="blitz/blitz.htm">Blitz Family</a> is dedicated to the memory of Jules and Jose Blitz, late of Seattle, USA, and Holland and Belgium.</li>
+					</ul>
+				</aside>
+				<p>You can contact Phillip M. Keys at <a href="mailto:philm@keysfamily.org">philm@keysfamily.org</a>.
+				</p>
+				<p class="i">This page is lightly maintained by Phil's cousin, Morgan Keys. You can reach him at <a href="mailto:morgan@keysfamily.org">morgan@keysfamily.org</a>	</p>
+				<p class="i">Last updated March 4, 2018</p>
+			</div>
+		</div>
+	</body>
 </html>
